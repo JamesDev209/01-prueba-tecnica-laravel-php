@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard saas</title>
+  <title>Dashboard - NiceAdmin Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -40,19 +40,10 @@
 
 <body>
 
-  <!--HEADERR-->
-  @include('shared.header')
-
-    <!--SIDEBAR-->
-  @include('shared.aside')
-  
-
-
-  @include('shared.footer')
+  @yield('contenido')
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('NiceAdmin/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>
